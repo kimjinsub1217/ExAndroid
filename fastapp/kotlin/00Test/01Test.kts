@@ -29,12 +29,31 @@ println(num5)
 val studentScore: Int = 91
 checkGrand(studentScore)
 
-fun checkGrand(studentScore:Int){
+fun checkGrand(studentScore: Int) {
     when (studentScore) {
-        in 90..100 ->println("A")
+        in 90..100 -> println("A")
         in 80..89 -> println("B")
         in 70..79 -> println("C")
         else -> println("F")
     }
 }
+
+// 4
+fun score(count: Int): Int {
+    if (count > 20) {
+        return 0
+    } else {
+        return count * 5
+    }
+}
+println(score(11))
+
+// 5
+fun plusTwoNumbers(firstNum: Int?, secondNum: Int?): Int {
+    val first: Int = if (firstNum == null) 0 else firstNum
+    val second: Int = if (secondNum == null) 0 else secondNum
+    return first + second
+}
+
+println(plusTwoNumbers(3, 3))
 
