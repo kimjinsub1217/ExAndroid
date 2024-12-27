@@ -1,0 +1,13 @@
+// 반복문 for문
+// 기본 포멧
+for(변수명 in 범위){
+    // 반복문 내용
+}
+
+val number = 1..10
+for( i in number){
+
+}
+
+//forEach
+//
