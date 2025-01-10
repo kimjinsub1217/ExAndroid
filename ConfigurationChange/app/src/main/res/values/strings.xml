@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConfigurationChange</string>
+    <string name="editTextHint">Configuration change 확인</string>
+    <string name="TextViewConter">Counter: 0</string>
+</resources>
