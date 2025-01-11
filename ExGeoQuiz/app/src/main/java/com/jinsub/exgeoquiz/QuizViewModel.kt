@@ -16,6 +16,7 @@ class QuizViewModel : ViewModel() {
 //    }
 
     var currentIndex = 0
+    var isCheater = false
     private val questionBank = listOf(
         Question(R.string.question_australia, true),
         Question(R.string.question_oceans, true),
@@ -24,6 +25,7 @@ class QuizViewModel : ViewModel() {
         Question(R.string.question_americas, true),
         Question(R.string.question_asia, true),
     )
+
     // get()은 속성 값을 읽을 때마다 동작 하는 맞춤 로직을 정의 하는 방법
     val currentQuestionAnswer: Boolean
         get() = questionBank[currentIndex].answer
@@ -34,7 +36,8 @@ class QuizViewModel : ViewModel() {
     fun moveToNext() {
         currentIndex = (currentIndex + 1) % questionBank.size
     }
-    fun moveToPrevious(){
+
+    fun moveToPrevious() {
         currentIndex = (currentIndex - 1 + questionBank.size) % questionBank.size
     }
 }
