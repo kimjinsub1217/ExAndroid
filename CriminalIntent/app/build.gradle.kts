@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -47,9 +48,12 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    // ViewModel
+
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.room.runtime)
+    ksp("androidx.room:room-compiler:2.6.1")
+
     testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)
