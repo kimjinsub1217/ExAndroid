@@ -1,4 +1,4 @@
-package com.bignerdranch.android.criminalintent.database
+package com.jinsub.criminalintent.database
 
 import androidx.room.TypeConverter
 import java.util.*

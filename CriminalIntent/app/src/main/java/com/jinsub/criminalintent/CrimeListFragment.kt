@@ -1,6 +1,4 @@
 package com.jinsub.criminalintent
-
-import android.content.ContentValues.TAG
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
@@ -16,8 +14,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.util.UUID
 
+
+private const val TAG = "CrimeListFragment"
+
 class CrimeListFragment : Fragment() {
 
+    /**
+     * 호스팅 액티비티에서 구현할 인터페이스
+     */
     interface Callbacks {
         fun onCrimeSelected(crimeId: UUID)
     }

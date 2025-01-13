@@ -1,9 +1,8 @@
-package com.bignerdranch.android.criminalintent
+package com.jinsub.criminalintent
 
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.room.Room
-import com.jinsub.criminalintent.Crime
 import com.jinsub.criminalintent.database.CrimeDatabase
 import java.util.*
 import java.util.concurrent.Executors
