@@ -3,9 +3,10 @@ package com.jinsub.fastcampus_blind.data.model.entity
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 import java.util.Date
 
-@Entity("Content")
+@Entity(tableName = "Content")
 data class ContentEntity(
     @PrimaryKey(false)
     val id: Int,
@@ -16,11 +17,11 @@ data class ContentEntity(
     @ColumnInfo
     var category: String,
     @ColumnInfo
-    val createDate: Date,
+    val createdDate: Date,
     @ColumnInfo
     val likeCount: Int,
     @ColumnInfo
     val commentCount: Int,
     @ColumnInfo
-    val viewCount:Int,
-):java.io.Serializable
+    val viewCount: Int,
+) : Serializable

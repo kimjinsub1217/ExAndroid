@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ContentDao {
 
-    @Query("SELECT * FROM Content ORDER BY createDate DESC")
+    @Query("SELECT * FROM Content ORDER BY createdDate DESC")
     fun selectAll(): Flow<List<ContentEntity>>
 
     @Delete

@@ -18,7 +18,7 @@ interface ContentService {
     suspend fun saveItem(@Body contentDto: ContentDto): ContentResponse
 
     @POST("update")
-    suspend fun updateITem(@Body contentDto: ContentDto): ContentResponse
+    suspend fun updateItem(@Body contentDto: ContentDto): ContentResponse
 
     @DELETE("{id}")
     suspend fun deleteItem(@Path("id") id: Int): ContentResponse

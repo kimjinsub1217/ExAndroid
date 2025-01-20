@@ -8,15 +8,11 @@ class DateConverter {
 
     @TypeConverter
     fun toDate(timestamp: String?): Date? {
-        return timestamp?.let {
-            DateUtil.dbDAteFormat.parse(it)
-        }
+        return timestamp?.let { DateUtil.dbDateFormat.parse(it) }
     }
 
     @TypeConverter
-    fun toTimeStamp(date: Date?): String? {
-        return DateUtil.dbDAteFormat.format(date)
+    fun toTimestamp(date: Date?): String? {
+        return DateUtil.dbDateFormat.format(date)
     }
-
-
 }
