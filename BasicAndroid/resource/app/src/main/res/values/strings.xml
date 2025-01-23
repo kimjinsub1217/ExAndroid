@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">resource</string>
+    <string name="hello">안녕!</string>
+    <string name="imageview_description">image</string>
+</resources>
