@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">xml_ui_test</string>
+    <string name="facebook_string">페이스북 계정으로 로그인</string>
+    <string name="kakao_string">카카오 계정으로 로그인</string>
+    <string name="sign_up_skip_string">회원가입 건너뛰고 레시피 확인하기</string>
 </resources>

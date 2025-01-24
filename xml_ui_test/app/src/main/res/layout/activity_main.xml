@@ -60,7 +60,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="페이스북 계정으로 로그인"
+                android:text="@string/facebook_string"
                 android:textColor="#ffffff"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="카카오 계정으로 로그인"
+                android:text="@string/kakao_string"
                 android:textColor="#ffffff"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -127,7 +127,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="회원가입 건너뛰고 레시피 확인하기"
+                android:text="@string/sign_up_skip_string"
                 android:textColor="#9b9b9b"
                 android:textSize="14sp" />
 
